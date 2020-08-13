@@ -1,0 +1,95 @@
+<!-- HTML expanding (Emmet):
+  - type html:5 and press Tab;
+  - type div>h1#header and press Tab;
+-->
+<head>
+  <script type="text/javascript" src="JS/checkoutScript.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+<h1>
+  Checkout
+ </h1>
+
+ <table>
+  <tr>
+    <td>
+      <h2>
+      Payment Methods
+      </h2>
+    </td>
+    <td></td>
+    <td>
+      <h2>
+      Order Summary
+      </h2>
+    </td>
+  </tr>
+  <tr>
+    <td id="Payment Methods">
+      <input type="radio" name = "payMethod" onClick="other()">
+      <label id="cash">Cash</label>
+      <br/>
+      <input type="radio" name = "payMethod" class = ccRadio onClick="creditCard()">
+      <label id="creditCard">Credit Card</label>
+      <br/>
+      <input type="radio" name = "payMethod" onClick="other()">
+      <label id="other">Other</label>
+      <br/>
+    </td>
+    <td></td>
+
+    <td id = "Cart">
+      <label id="beer"></label>
+      <br/>
+      <label id="redWine"></label>
+      <br/>
+      <label id="whiteWine"></label>
+      <br/>
+      <label id="gt"></label>
+      <br/>
+      <label id="whiskey"></label>
+      <br/>
+      <label id="rum"></label>
+      <br/>
+      <label id="total"></label>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <br/><br/>
+      <label id = "name">Name:</label><br/>
+      <label id = "tbl">Table Number:</label><br/>
+    </td>
+    <td>
+      <br/><br/>
+      <input id = "nameIn" type="text" name="fname"><br>
+      <input id = "tblIn" type="text" name="lname"><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <br/><br/><br/>
+    <!-- <form action="/action_page.php"> -->
+      <label id = "fnl">First name:</label><br/>
+      <label id = "lnl">Last name:</label><br/>
+      <label id = "ctl">Card Type:</label><br/>
+      <label id = "cnl">Card Number:</label><br/>
+      <label id = "cvc">CVC Date:</label><br/>
+      </td>
+      <td>
+        <br/><br/><br/>
+      <input id = "fnt" type="text" name="fname"><br>
+      <input id = "lnt" type="text" name="lname"><br>
+      <input id = "ctt" type="text" name="type"><br>
+      <input id = "cnt" type="text" name="number"><br>
+      <input id = "cvt" type="text" name="date"><br>
+      </td>
+    <td>
+      <br/><br/><br/>
+    <button onClick="order()">
+        Order
+      </button>
+    </td>
+</table>
+</body>
