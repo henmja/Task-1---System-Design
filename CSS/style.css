@@ -1,0 +1,35 @@
+body {
+  background: white; /* try type yellow */
+  color: #323232;
+
+  margin:30px
+}
+#Menu {
+  background: lightgrey;
+}
+
+#Cart {
+  background: lightgrey;
+}
+td:nth-child(2) {
+    width: 200px
+}
+
+label:hover, label:active, input:hover+label, input:active+label {
+    background: lightblue;
+}
+
+input[type=checkbox] + label {
+    color: black;
+}
+input[type=checkbox]:checked + label {
+    background: lightblue;
+}
+
+.hidden{
+  visibility:hidden;
+}
+
+.quantity {
+  width: 20px;
+}
