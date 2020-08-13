@@ -1,0 +1,91 @@
+<!-- HTML expanding (Emmet):
+  - type html:5 and press Tab;
+  - type div>h1#header and press Tab;
+-->
+<head>
+  <script type="text/javascript" src="JS/indexScript.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+<h1>
+  The Unofficial Papirfly Pub
+ </h1>
+
+ <table>
+  <tr>
+    <td>
+      <h2>
+      Menu
+      </h2>
+    </td>
+    <td></td>
+    <td>
+      <h2>
+      Shopping Cart
+      </h2>
+    </td>
+  </tr>
+  <tr>
+    <td id="Menu">
+      <table>
+      <td>
+      <span style="font-weight:bold">Drinks:</span><br/>
+      <label id="beer"></label><br/>
+      <label id="redWine"></label><br/>
+      <label id="whiteWine"></label><br/>
+      <label id="gt"></label><br/>
+      <label id="whiskey"></label><br/>
+      <label id="rum"></label>
+      </td>
+      <td>
+      <span style="font-weight:bold">Quantity:</span>
+      <br/>
+      <input id = "beerQuantity" class = "quantity" type="text" name="quantity" onkeypress="this.style.width = (8+(this.value.length + 1) * 8) + 'px';">
+      <br/>
+      <input id = "redWineQuantity" class = "quantity" type="text" name="quantity" onkeypress="this.style.width = (8+(this.value.length + 1) * 8) + 'px';">
+      <br/>
+      <input id = "whiteWineQuantity" class = "quantity" type="text" name="quantity" onkeypress="this.style.width = (8+(this.value.length + 1) * 8) + 'px';">
+      <br/>
+      <input id = "gtQuantity" class = "quantity" type="text" name="quantity" onkeypress="this.style.width = (8+(this.value.length + 1) * 8) + 'px';">
+      <br/>
+      <input id = "whiskeyQuantity" class = "quantity" type="text" name="quantity" onkeypress="this.style.width = (8+(this.value.length + 1) * 8) + 'px';">
+      <br/>
+      <input id = "rumQuantity" class = "quantity" type="text" name="quantity" onkeypress="this.style.width = (8+(this.value.length + 1) * 8) + 'px';">
+      <br/>
+      </table>
+    </td>
+    <td></td>
+
+    <td id = "Cart">
+      <label id="beerOut"></label>
+      <br/>
+      <label id="redWineOut"></label>
+      <br/>
+      <label id="whiteWineOut"></label>
+      <br/>
+      <label id="gtOut"></label>
+      <br/>
+      <label id="whiskeyOut"></label>
+      <br/>
+      <label id="rumOut"></label>
+      <br/>
+      <label id="total"></label>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <button onClick="addToCart()">
+        Add to Cart
+      </button>
+      </td>
+      <td></td>
+    <td>
+      <button onclick="clearCart()">
+        Clear Cart
+      </button>
+      <button onClick="checkout()">
+        Checkout
+      </button>
+    </td>
+</table>
+</body>
